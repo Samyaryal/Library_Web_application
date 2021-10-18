@@ -18,24 +18,6 @@ const authorSchema = new mongoose.Schema({
     index: true,
     required: true,
   },
-  // books: [
-  //   {
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: 'Book',
-  //   required: true
-  //   }
-  // ]
-  // books: [
-  //   {
-  //     type: mongoose.Schema.Types.ObjectId,
-  //     ref: 'Book',
-      
-  //   },
-  // ]
 })
-// authorSchema.virtual('books', {
-//   ref: 'Book',
-//   localField: '_id',
-//   foreignField: 'authors'
-// })
+
 export default mongoose.model<AuthorDocument>('Author', authorSchema)
